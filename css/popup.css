@@ -1,0 +1,156 @@
+
+.age-verification-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+}
+
+.modal-content {
+    background: #000;
+    border: 2px solid #fff;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.modal-header h2 {
+    font-family: "ppneuemontreal_bold", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.modal-body {
+    padding: 20px 0;
+}
+
+.cocktail-image {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.modal-body h3 {
+    font-family: "ppneuemontreal_bold", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+#dob, #country {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: "ppneuemontreal_book", Arial, Helvetica, sans-serif;
+}
+
+#country {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg fill="%23FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
+    background-size: 20px;
+}
+
+#country option {
+    background: #000;
+    color: #fff;
+}
+
+.modal-body p {
+    font-size: 12px;
+    font-family: "ppneuemontreal_book", Arial, Helvetica, sans-serif;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+#enterButton {
+    background: #000;
+    border: 2px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    font-family: "ppneuemontreal_bold", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: color 0.3s;
+}
+
+#enterButton:hover {
+    color: #000;
+    background: #fff;
+}
+
+.modal-footer {
+    margin-top: 20px;
+}
+
+.more-cocktails {
+    display: inline-block;
+    background: #000;
+    border: 2px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    font-family: "ppneuemontreal_bold", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.more-cocktails:hover {
+    color: #000;
+    background: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .modal-content {
+        width: 90%;
+    }
+
+    #dob, #country {
+        width: 90%;
+    }
+
+    .cocktail-image {
+        width: 80px;
+    }
+}
+
+@media (max-width: 400px) {
+    .modal-content {
+        width: 95%;
+    }
+
+    .modal-header h2 {
+        font-size: 20px;
+    }
+
+    .modal-body h3 {
+        font-size: 14px;
+    }
+
+    #dob, #country {
+        width: 95%;
+    }
+
+    .cocktail-image {
+        width: 60px;
+    }
+}
+
+.logo_img{
+    width: 100vw;
+}

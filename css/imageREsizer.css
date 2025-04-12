@@ -1,0 +1,107 @@
+99% of storage used … If you run out, you can't create, edit, and upload files. Get 100 GB of storage for BDT 150.00 BDT 38.00/month for 2 months.
+/* General Image Styling for Index Page */
+.index-image {
+  max-width: 100%; /* Ensure images don’t overflow their containers */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Subtle rounded corners for elegance */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+  object-fit: cover; /* Ensure images fill their space elegantly */
+}
+
+/* Hover Effect for Luxury Feel */
+.index-image:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+ /* Gold border for premium look */
+}
+
+/* Specific Section Adjustments */
+.glance img.index-image {
+  max-height: 830px; /* Control size in Quick Glance section */
+  width: 500px;
+}
+
+/* .inves-product .work figure img.index-image {
+  max-height: 250px; 
+  width: 100%;
+  border: 2px solid #fff; 
+  position: relative;
+} */
+
+/* Overlay Effect for Cocktail Images */
+/* .work figure {
+  position: relative;
+  overflow: hidden;
+} */
+
+/* .work figure::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
+
+.work figure:hover::after {
+  opacity: 1; 
+} */
+
+/* Adjust Footer Logo */
+.footer-logo img.index-image {
+  max-width: 150px; /* Smaller logo for footer */
+  filter: brightness(1.2); /* Slight brightness for premium look */
+}
+
+/* Video Styling (Hero Section) */
+.swiper-slide video {
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+  filter: brightness(0.9) contrast(1.1); /* Subtle enhancement */
+ /* Gold accent */
+}
+
+
+/* Fine-Tune Slider Content */
+.slider-content {
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay for text */
+  padding: 20px;
+  border-radius: 10px;
+}
+.index-image {
+    /* filter: grayscale(50%); */
+    transition: all linear .4s;
+  }
+  .index-image:hover {
+    /* filter: grayscale(0%); */
+  }
+.index-image::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 50%;
+    height: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .index-image:hover::before {
+    opacity: 1;
+
+  }
+
+@media (max-width: 600px) {
+    .index-image {
+      max-height: 300px; /* Smaller on mobile */
+    }
+    .inves-product .work figure img.index-image {
+      max-height: 200px; /* Smaller cocktail images on mobile */
+    }
+  }
